@@ -1,0 +1,117 @@
+=== Combate guardado el 2026-11-05 20:35:00 ===
+
+=== 2 vs Goblin ===
+
+-- Ronda 1 --
+2            [##########] 120/120 VIVO
+Goblin       [##########]  50/50  VIVO
+2 ataca a Goblin y causa 29 de dano
+   Goblin       [####------]  21/50  VIVO
+Goblin ataca a 2 (CRITICO) y causa 11 de dano
+   2            [#########-] 109/120 VIVO
+
+-- Ronda 2 --
+2            [#########-] 109/120 VIVO
+Goblin       [####------]  21/50  VIVO
+2 ataca a Goblin y causa 21 de dano
+   Goblin       [----------]   0/50  MUERTO
+
+Victoria de 2!
+Logro desbloqueado: Primera Victoria
+Logro desbloqueado: Cazador de Goblin
+Botin perdido: Inventario lleno (capacidad: 3)
+=== Combate guardado el 2026-11-05 20:35:11 ===
+
+=== 1 vs Goblin ===
+
+-- Ronda 1 --
+1            [##########] 120/120 VIVO
+Goblin       [##########]  50/50  VIVO
+1 ataca a Goblin y causa 28 de dano
+   Goblin       [####------]  22/50  VIVO
+Goblin ataca con furia a 1 y causa 10 de dano
+   1            [#########-] 110/120 VIVO
+
+-- Ronda 2 --
+1            [#########-] 110/120 VIVO
+Goblin       [####------]  22/50  VIVO
+1 ataca a Goblin y causa 22 de dano
+   Goblin       [----------]   0/50  MUERTO
+
+Victoria de 1!
+Botin perdido: Inventario lleno (capacidad: 3)
+=== Combate guardado el 2026-11-05 20:38:02 ===
+[Hilos antes de start()] semifinal-A=NEW | semifinal-B=NEW
+[Hilos durante la ejecucion] semifinal-A=RUNNABLE | semifinal-B=RUNNABLE
+=== SEMIFINAL: Maximo vs Circe ===
+=== SEMIFINAL: Aquiles vs Merlina ===
+-- Ronda 1 --
+-- Ronda 1 --
+Aquiles ataca a Merlina y causa 27 de dano
+Maximo usa Golpe Brutal (-10 de vida propia) y causa 54 de dano a Circe
+   Merlina      [#######---]  53/80  VIVO
+   Circe        [###-------]  26/80  VIVO
+Circe ataca a Maximo y causa 24 de dano
+   Maximo       [#######---]  86/120 VIVO
+-- Ronda 2 --
+Maximo usa Golpe Brutal (-10 de vida propia) y causa 26 de dano a Circe
+   Circe        [----------]   0/80  MUERTO
+Clasifica a la final: Maximo
+Merlina lanza Bola de Fuego (-20 de mana) y causa 42 de dano a Aquiles, que queda en llamas
+   Aquiles      [#######---]  78/120 ENVENENADO
+-- Ronda 2 --
+Aquiles ataca a Merlina y causa 27 de dano
+   Merlina      [###-------]  26/80  VIVO
+Merlina lanza Bola de Fuego (-20 de mana) y causa 42 de dano a Aquiles, que queda en llamas
+   Aquiles      [###-------]  36/120 ENVENENADO
+-- Ronda 3 --
+Aquiles usa Golpe Brutal (-10 de vida propia) y causa 26 de dano a Merlina
+   Merlina      [----------]   0/80  MUERTO
+Clasifica a la final: Aquiles
+[Hilos despues de join()] semifinal-A=TERMINATED | semifinal-B=TERMINATED
+=== FINAL: Maximo vs Aquiles ===
+-- Ronda 1 --
+Maximo usa Golpe Brutal (-10 de vida propia) y causa 46 de dano a Aquiles
+   Aquiles      [######----]  74/120 VIVO
+Aquiles ataca a Maximo y causa 24 de dano
+   Maximo       [#######---]  86/120 VIVO
+-- Ronda 2 --
+Maximo usa Golpe Brutal (-10 de vida propia) y causa 46 de dano a Aquiles
+   Aquiles      [##--------]  28/120 VIVO
+Aquiles ataca a Maximo y causa 23 de dano
+   Maximo       [####------]  53/120 VIVO
+-- Ronda 3 --
+Maximo usa Golpe Brutal (-10 de vida propia) y causa 28 de dano a Aquiles
+   Aquiles      [----------]   0/120 MUERTO
+
+CAMPEON DEL TORNEO: Maximo
+=== Combate guardado el 2026-11-06 19:06:04 ===
+
+=== 1 vs Arana Gigante ===
+
+-- Ronda 1 --
+1            [##########] 120/120 VIVO
+Arana Gigante [##########]  60/60  VIVO
+1 ataca a Arana Gigante y causa 30 de dano
+   Arana Gigante [#####-----]  30/60  VIVO
+Arana Gigante ataca a 1 y causa 8 de dano
+   1            [#########-] 112/120 VIVO
+
+-- Ronda 2 --
+1            [#########-] 112/120 VIVO
+Arana Gigante [#####-----]  30/60  VIVO
+1 ataca a Arana Gigante y causa 27 de dano
+   Arana Gigante [#---------]   3/60  VIVO
+Arana Gigante ataca con furia a 1 y causa 12 de dano, aplicando Veneno
+   1            [########--] 100/120 ENVENENADO
+
+-- Ronda 3 --
+1            [########--] 100/120 ENVENENADO
+Arana Gigante [#---------]   3/60  VIVO
+1 ataca a Arana Gigante y causa 3 de dano
+   Arana Gigante [----------]   0/60  MUERTO
+
+Victoria de 1!
+Logro desbloqueado: Primera Victoria
+Logro desbloqueado: Cazador de Arana Gigante
+Botin perdido: Inventario lleno (capacidad: 3)
