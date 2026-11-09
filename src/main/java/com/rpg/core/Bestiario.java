@@ -50,6 +50,17 @@ public class Bestiario {
         return derrotados.getOrDefault(nombre, 0);
     }
 
+    /** Copia de los derrotados, para guardarla sin exponer el mapa interno. */
+    public Map<String, Integer> getDerrotados() {
+        return new LinkedHashMap<>(derrotados);
+    }
+
+    /** Reemplaza los derrotados por los de una partida cargada (o vacio para reiniciar). */
+    public void cargarDerrotados(Map<String, Integer> guardados) {
+        derrotados.clear();
+        derrotados.putAll(guardados);
+    }
+
     public String describir() {
         StringBuilder texto = new StringBuilder();
         int numero = 1;

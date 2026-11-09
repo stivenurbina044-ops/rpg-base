@@ -3,6 +3,7 @@ package com.rpg.core;
 /** Imprime cada evento del combate y lo guarda para incluirlo en el guardado de la partida. */
 public class RegistroCombate {
 
+
     private final StringBuilder texto = new StringBuilder();
 
     public void agregar(String linea) {
@@ -24,3 +25,5 @@ public class RegistroCombate {
         return texto.toString();
     }
 }
+
+

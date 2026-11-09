@@ -21,13 +21,46 @@ public class TorneoManager {
     /** @return el campeon del torneo */
     public Personaje jugarTorneo() {
         List<Personaje> gladiadores = crearGladiadores().getMiembros();
+        Personaje[] finalistas = new Personaje[2];
 
-        // TALLER CONCURRENCIA: las dos semifinales se simulan una tras otra en el hilo principal.
-        // La final solo puede empezar cuando ambas hayan terminado.
-        Personaje finalista1 = simularSemifinal(gladiadores.get(0), gladiadores.get(1));
-        Personaje finalista2 = simularSemifinal(gladiadores.get(2), gladiadores.get(3));
+        Thread semiA = new Thread(
+                () -> finalistas[0] = simularSemifinal(gladiadores.get(0), gladiadores.get(1)), "semifinal-A");
+        Thread semiB = new Thread(
+                () -> finalistas[1] = simularSemifinal(gladiadores.get(2), gladiadores.get(3)), "semifinal-B");
 
-        return simularFinal(finalista1, finalista2);
+        mostrarEstados("antes de start()", semiA, semiB);   // NEW
+        semiA.start();
+        semiB.start();
+        mostrarEstados("durante la ejecucion", semiA, semiB); // RUNNABLE / TIMED_WAITING
+
+        try {
+            semiA.join();
+            semiB.join();
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IllegalStateException("Torneo interrumpido", e);
+        }
+        mostrarEstados("despues de join()", semiA, semiB);    // TERMINATED
+
+        // join() garantiza que los resultados ya son visibles para este hilo
+        if (finalistas[0] == null || finalistas[1] == null) {
+            throw new IllegalStateException("Una semifinal termino con error");
+        }
+        return simularFinal(finalistas[0], finalistas[1]);
+    }
+
+    private void mostrarEstados(String momento, Thread a, Thread b) {
+        registro.agregar("[Hilos %s] %s=%s | %s=%s", momento,
+                a.getName(), a.getState(), b.getName(), b.getState());
+    }
+
+    /** Pausa corta para poder observar TIMED_WAITING en la demostracion. */
+    private void pausa(long ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public Personaje simularSemifinal(Personaje a, Personaje b) {
